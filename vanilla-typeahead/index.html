@@ -84,6 +84,17 @@
 </body>
 
 <script>
+
+// // look here for instructions --> https://github.com/littlehiawatha-wlh16/vanillajs-2-afternoon/tree/master/vanilla-typeahead 
+
+// //  step 1
+const characters = [] 
+
+fetch('https://www.swapi.co/api/people')
+    .then(response => response.json())
+    .then(response => characters.push(...response.results))
+
+
 </script>
 
 </html>
